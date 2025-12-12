@@ -4,15 +4,19 @@ import "fmt"
 
 func Run() {
 
-	guess := ReadNumber()
+	for n := 0; n < 3; n++ {
 
-	if NumberGood(guess) {
+		guess := ReadNumber()
 
-		fmt.Println("Richtige Antwort")
+		if NumberGood(guess) {
 
-	} else {
+			fmt.Println("Richtige Antwort, Sie haben gewonnen!")
+			return
 
-		fmt.Println("Zu viele falsche Antworten, Game Over")
+		}
+		fmt.Println("Falsch, versuchen sie es erneut.")
 
 	}
+	fmt.Println("Game Over, Sie haben verloren.")
+
 }
