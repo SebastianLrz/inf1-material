@@ -2,9 +2,9 @@ package game
 
 //NumberGood liefert true falls die geratene Zahl richtig ist
 
-func NumberGood(guess int) bool {
+func NumberGood(guess, x int) bool {
 
-	if guess == 5 {
+	if guess == x {
 
 		return true
 
