@@ -1,5 +1,0 @@
-package primes
-
-func IsPrime(n int) bool {
-	return false
-}
