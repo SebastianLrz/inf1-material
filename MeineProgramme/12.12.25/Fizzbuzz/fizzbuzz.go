@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	//fizzbuzz_v1()
-	fizzbuzz_v3()
+	//fizzbuzz_v3()
 
 	var a int
 	fmt.Print("Wähle x!")
@@ -86,7 +86,7 @@ func fizzbuzz_v4() {
 
 func fizzbuzz_allgemein(a, b, m int) {
 
-	for i := 0; i < m; i++ {
+	for i := 1; i < m; i++ {
 
 		if i%a == 0 && i%b == 0 {
 			fmt.Println("fizzbuzz")
@@ -102,6 +102,6 @@ func fizzbuzz_allgemein(a, b, m int) {
 			fmt.Println("buzz")
 			continue
 		}
-
+		fmt.Println(i)
 	}
 }
